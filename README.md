@@ -14,6 +14,18 @@ An automated trading alert system for TQQQ (3x leveraged Nasdaq ETF). Monitors p
 
 ---
 
+## 🤖 AI Portfolio Bot
+
+A fully autonomous AI paper trading bot that runs entirely on GitHub Actions — no server required. Every 30 minutes during US market hours, it fetches live prices via Finnhub, asks Groq (Llama 3.3 70B) for buy/sell decisions, enforces stop-loss and profit target rules, and commits the results back to the repo. Comes with a live dashboard that reads the portfolio JSON and visualizes performance in real time.
+
+**Rules:** $2,700 starting capital · max 5 positions · 25% per position · -7% stop · +10% target · 20-day max hold
+
+**Tech:** Python, Groq (Llama 3.3 70B), Finnhub API, GitHub Actions, Supabase, HTML/JS dashboard
+
+🔗 https://github.com/alonmorad9/ai-portfolio-bot
+
+---
+
 ## 📈 Real Stock Alert
 
 A real-time stock monitoring and alerting tool. Watches configurable tickers and triggers notifications when defined conditions are met — useful for keeping tabs on multiple positions without manually watching the market.
@@ -28,7 +40,7 @@ A real-time stock monitoring and alerting tool. Watches configurable tickers and
 
 An automated pipeline that generates NBA highlight reels from raw game footage or broadcast streams. Uses computer vision and video processing to identify key moments — dunks, three-pointers, clutch plays — and assembles them into shareable highlight clips.
 
-**Tech:** Python, video processing, NBA data APIs
+**Tech:** Python, OpenCV / video processing, NBA data APIs
 
 🔒 *This repository is private — description provided for reference.*
 
