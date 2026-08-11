@@ -14,6 +14,16 @@ An automated trading alert system for TQQQ (3x leveraged Nasdaq ETF). Monitors p
 
 ---
 
+## 📊 Swing Tracker
+
+A self-hosted swing trading tracker that syncs across every device via a private GitHub repo. Tracks open/closed positions and DCA ladders, writes an automated end-of-day journal entry even if the app is never opened, and runs a daily pre-market trade-ideas scan (RSI, SMA200 trend, volume spikes, distance from 52-week high) using Finnhub data and an LLM to surface and score new setups.
+
+**Tech**: JavaScript (single-page app), GitHub Actions (daily sync + journal + ideas), Groq / Cerebras LLM, Finnhub API, GitHub as data store
+
+🔒 *This repository is private — description provided for reference.*
+
+---
+
 ## 🤖 AI Portfolio Bot
 
 A fully autonomous AI paper trading bot that runs entirely on GitHub Actions — no server required. Every 30 minutes during US market hours, it fetches live prices via Finnhub, asks Groq (Llama 3.3 70B) for buy/sell decisions, enforces stop-loss and profit target rules, and commits the results back to the repo. Comes with a live dashboard that reads the portfolio JSON and visualizes performance in real time.
